@@ -46,3 +46,20 @@ font-family: Roboto;
     justify-content:flex-end;
     margin: 10px;
 }
+.ffg{
+  display: grid;  
+}
+@media screen and (max-width: 980px) {
+.ffg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.aaa_card_a {
+    margin: 15px;
+
+}
+
+}
