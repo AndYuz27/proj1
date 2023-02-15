@@ -49,6 +49,18 @@ font-family: Roboto;
 .ffg{
   display: grid;  
 }
+.aaa_header{
+    height: 50px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+}
+.mobile_nav{
+    display: none;
+}
 @media screen and (max-width: 980px) {
 .ffg{
   display: flex;
@@ -56,6 +68,12 @@ font-family: Roboto;
   justify-content: center;
   align-items: center;
   margin: 0;
+}
+.mobile_nav{
+    display: block;
+}
+.desktop_nav{
+    display: none;
 }
 .aaa_card_a {
     margin: 15px;

@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import CardA from "./components/CardA"
 import axios from 'axios'
 import Column from "./components/Column_aaa_a"
+import Header from "./components/Header"
 
 export default function App() {
   const data_andy = {
@@ -18,6 +19,7 @@ export default function App() {
 
   return (
     <div className='App'>
+      <Header logo="Sample Logo"><a href="#">link 1</a></Header>
       
       {/* <Button>Sample text</Button> */}
       <p>Пример карточки</p>
