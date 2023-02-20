@@ -19,7 +19,12 @@ export default function App() {
 
   return (
     <div className='App'>
-      <Header logo="Sample Logo"><a href="#">link 1</a></Header>
+      <Header logo="Sample Logo">
+        <a href="#">link 1</a>
+        <a href="#">link 1</a>
+        <a href="#">link 1</a>
+        <a href="#">link 1</a>
+      </Header>
       
       {/* <Button>Sample text</Button> */}
       <p>Пример карточки</p>
