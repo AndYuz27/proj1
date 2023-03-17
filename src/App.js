@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { defer } from 'react-router';
-import Button from "./components/Button";
+
 import CardA from "./components/CardA"
 import axios from 'axios'
 import Column from "./components/Column_aaa_a"
 import Header from "./components/Header"
+import Daterator from './components/Daterator';
 
 export default function App() {
   const data_andy = {
@@ -15,7 +15,9 @@ export default function App() {
     desc_t: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis nisi tellus, eu malesuada tortor interdum nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec pharetra ante a diam commodo laoreet. Nam imperdiet, urna ac tincidunt scelerisque, lectus felis accumsan nisi, eget suscipit lectus est sit amet enim. "
   }
 
-
+  function onChange(timestamp) {
+    console.log(timestamp);
+  }
 
   return (
     <div className='App'>
@@ -25,6 +27,7 @@ export default function App() {
         <a href="#">link 1</a>
         <a href="#">link 1</a>
       </Header>
+      <Daterator onChange={onChange}/>
       
       {/* <Button>Sample text</Button> */}
       <p>Пример карточки</p>
